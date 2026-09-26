@@ -1,0 +1,2 @@
+PASS find . -type f -size +10M -print returned no files.
+PASS data, datasets, checkpoints, logs, backups, IDE and old cache directories contain no release files.

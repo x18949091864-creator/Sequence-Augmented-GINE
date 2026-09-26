@@ -1,0 +1,23 @@
+{
+  "experiment_name": "matched_gru_50k_seed3407",
+  "seed": 3407,
+  "train_size": 50000,
+  "val_size": 10000,
+  "batch_size": 8,
+  "epochs": 50,
+  "patience": 20,
+  "hidden_dim": 128,
+  "num_layers": 4,
+  "num_heads": 4,
+  "learning_rate": 0.0001,
+  "weight_decay": 1e-05,
+  "scheduler_factor": 0.5,
+  "scheduler_patience": 3,
+  "gradient_clip": 5.0,
+  "num_workers": 0,
+  "pin_memory": false,
+  "persistent_workers": false,
+  "log_root": "logs/pcqm4mv2/matched_gru",
+  "sequence_model": "gru",
+  "gru_num_layers": 1
+}

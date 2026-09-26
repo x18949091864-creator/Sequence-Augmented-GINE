@@ -1,0 +1,12 @@
+PCQM | GINE-128 | expected=173697 | actual=173697 | PASS | models.dual_branch.SequenceComparisons.gine_only.GINEOnly
+PCQM | GINE-Wide | expected=371137 | actual=371137 | PASS | models.dual_branch.SequenceComparisons.gine_only.GINEOnly
+PCQM | GINE-Attn (NoSeq) | expected=372678 | actual=372678 | PASS | models.dual_branch.SequenceComparisons.gine_pointwise_attn_noseq.GINEPointwiseAttnNoSeq
+PCQM | GINE-GRU | expected=355201 | actual=355201 | PASS | models.dual_branch.SequenceComparisons.dualbranch_crossattn_index_gru_masked.DualBranchCrossAttnRandomGRUMasked
+PCQM | GINE-Transformer | expected=388609 | actual=388609 | PASS | models.dual_branch.SequenceComparisons.dualbranch_crossattn_index_transformer_masked.DualBranchCrossAttnRandomTransformerMasked
+PCQM | GINE-Mamba | expected=372609 | actual=372609 | PASS | models.dual_branch.CrossAttn.dualbranch_crossattn_index_masked.DualBranchCrossAttnRandomMasked
+QM9 | GINE-128 | expected=151937 | actual=151937 | PASS | models.dual_branch.TaskModels.qm9_task_models_index.QM9GINEOnlyTask
+QM9 | GINE-Wide | expected=352605 | actual=352605 | PASS | models.dual_branch.TaskModels.qm9_task_models_index.QM9GINEOnlyTask
+QM9 | GINE-Attn (NoSeq) | expected=350918 | actual=350918 | PASS | models.dual_branch.TaskModels.qm9_noseq_task_model.QM9GINEPointwiseAttnNoSeqTask
+QM9 | GINE-GRU | expected=333441 | actual=333441 | PASS | models.dual_branch.TaskModels.qm9_task_models_index.QM9GINEGRUTask
+QM9 | GINE-Transformer | expected=366849 | actual=366849 | PASS | models.dual_branch.TaskModels.qm9_task_models_index.QM9GINETransformerTask
+QM9 | GINE-Mamba | expected=350849 | actual=350849 | PASS | models.dual_branch.TaskModels.qm9_task_models_index.QM9GINEMambaTask

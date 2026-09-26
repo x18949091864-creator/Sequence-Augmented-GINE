@@ -1,0 +1,38 @@
+{
+  "scope": "One no-gradient synthetic CUDA forward per exact retained GINE-Mamba model; no training, backward pass, optimizer, or scientific source modification.",
+  "gpu": "Physical GPU 1: NVIDIA RTX 4090; CUDA_VISIBLE_DEVICES=1, PyTorch cuda:0",
+  "input_graph_node_counts": [
+    3,
+    5
+  ],
+  "results": [
+    {
+      "family": "PCQM",
+      "model": "GINE-Mamba",
+      "source_class": "models.dual_branch.CrossAttn.dualbranch_crossattn_index_masked.DualBranchCrossAttnRandomMasked",
+      "source_file": "models/dual_branch/CrossAttn/dualbranch_crossattn_index_masked.py",
+      "source_sha256": "360b7361c8e7557dae9cc5010b4c3612bd61d10f7d84d40ddefea325f16d3ea9",
+      "device": "cuda:0 (physical GPU 1)",
+      "output_shape": [
+        2,
+        1
+      ],
+      "all_finite": true,
+      "exception": null
+    },
+    {
+      "family": "QM9",
+      "model": "GINE-Mamba",
+      "source_class": "models.dual_branch.TaskModels.qm9_task_models_index.QM9GINEMambaTask",
+      "source_file": "models/dual_branch/TaskModels/qm9_task_models_index.py",
+      "source_sha256": "f6516fff6e20ee7334d81938afd2c40f5356fc406f2c303407ca8a2740544627",
+      "device": "cuda:0 (physical GPU 1)",
+      "output_shape": [
+        2,
+        1
+      ],
+      "all_finite": true,
+      "exception": null
+    }
+  ]
+}

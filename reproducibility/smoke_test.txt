@@ -1,0 +1,18 @@
+PCQM | GINE-128 | PASS | output shape=(2, 1) finite=True
+PCQM | GINE-Wide | PASS | output shape=(2, 1) finite=True
+PCQM | GINE-Attn (NoSeq) | PASS | output shape=(2, 1) finite=True
+PCQM | GINE-GRU | PASS | output shape=(2, 1) finite=True
+PCQM | GINE-Transformer | PASS | output shape=(2, 1) finite=True
+PCQM | GINE-Mamba | NOT APPLICABLE on CPU | installed mamba_ssm backend requires CUDA tensors
+QM9 | GINE-128 | PASS | output shape=(2, 1) finite=True
+QM9 | GINE-Wide | PASS | output shape=(2, 1) finite=True
+QM9 | GINE-Attn (NoSeq) | PASS | output shape=(2, 1) finite=True
+QM9 | GINE-GRU | PASS | output shape=(2, 1) finite=True
+QM9 | GINE-Transformer | PASS | output shape=(2, 1) finite=True
+QM9 | GINE-Mamba | NOT APPLICABLE on CPU | installed mamba_ssm backend requires CUDA tensors
+PCQM | GINE-Mamba | CUDA inference PASS | physical GPU 1 (torch cuda:0) | nodes=3,5 | shape=(2, 1) finite=True | source hash PASS
+QM9 | GINE-Mamba | CUDA inference PASS | physical GPU 1 (torch cuda:0) | nodes=3,5 | shape=(2, 1) finite=True | source hash PASS
+CPU-compatible models: 10/10 PASS
+GINE-Mamba CPU: NOT APPLICABLE with installed mamba_ssm CUDA backend
+GINE-Mamba CUDA inference: 2/2 PASS
+Overall executable model validation: 12/12 PASS in supported runtime

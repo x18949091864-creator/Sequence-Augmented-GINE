@@ -1,0 +1,10 @@
+PCQM | GINE-Attn (NoSeq) | NoSeq padding and key_padding_mask:PASS
+PCQM | GINE-GRU | serialization padding:PASS | padded output zeroing and key_padding_mask:PASS
+PCQM | GINE-Transformer | serialization padding:PASS | padded output zeroing and key_padding_mask:PASS
+PCQM | GINE-Mamba | serialization padding:PASS | padded output zeroing and key_padding_mask:PASS
+QM9 | GINE-Attn (NoSeq) | NoSeq padding and key_padding_mask:PASS
+QM9 | GINE-GRU | serialization padding:PASS | padded output zeroing and key_padding_mask:PASS
+QM9 | GINE-Transformer | serialization padding:PASS | padded output zeroing and key_padding_mask:PASS
+QM9 | GINE-Mamba | serialization padding:PASS | padded output zeroing and key_padding_mask:PASS
+Mamba base forward explicitly zeros padded sequence outputs with masked_fill before MultiheadAttention.
+Transformer passes src_key_padding_mask to its contextual encoder. NoSeq zeros padded adapter output.

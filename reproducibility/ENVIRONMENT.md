@@ -1,0 +1,5 @@
+# Environment evidence
+
+The owner-provided validation environment reported Python 3.10.20, PyTorch 2.5.1+cu121, PyTorch Geometric 2.7.0, OGB 1.3.6, RDKit 2022.09.5, mamba_ssm 2.2.4, NumPy 1.26.4, Matplotlib 3.10.9, and tqdm 4.67.3. These are measured installed versions, not a claim that the frozen snapshot recorded an exact original experiment environment. CPU validation used no GPU. The separately authorized GINE-Mamba inference smoke check used physical GPU 1 (NVIDIA RTX 4090, CUDA_VISIBLE_DEVICES=1, visible to PyTorch as cuda:0) for one no-gradient synthetic forward per model.
+
+The frozen snapshot has no environment lock file. Install compatible versions from the official package sources in a separate environment. PyTorch CUDA wheels and mamba_ssm require installation appropriate to the user's platform. The standard release validator sets CUDA_VISIBLE_DEVICES empty and performs no training. The installed mamba_ssm backend requires CUDA tensors for Mamba forward, so its CPU smoke test is marked not applicable. The two Mamba implementations passed the separately authorized CUDA inference smoke check; see cuda_smoke_check.json and smoke_test.txt.

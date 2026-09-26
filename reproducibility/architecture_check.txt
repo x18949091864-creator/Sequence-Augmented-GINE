@@ -1,0 +1,12 @@
+PCQM | GINE-128 | GINE layers=4:PASS | GINE eps=0 fixed:PASS | BatchNorm layers=4:PASS | hidden=128:PASS
+PCQM | GINE-Wide | GINE layers=4:PASS | GINE eps=0 fixed:PASS | BatchNorm layers=4:PASS | hidden=192:PASS
+PCQM | GINE-Attn (NoSeq) | GINE layers=4:PASS | GINE eps=0 fixed:PASS | BatchNorm layers=4:PASS | hidden=128:PASS | cross-attention heads=4, embed=128:PASS | pointwise adapter:PASS | no contextual sequence encoder:PASS
+PCQM | GINE-GRU | GINE layers=4:PASS | GINE eps=0 fixed:PASS | BatchNorm layers=4:PASS | hidden=128:PASS | cross-attention heads=4, embed=128:PASS | GRU single-layer unidirectional:PASS
+PCQM | GINE-Transformer | GINE layers=4:PASS | GINE eps=0 fixed:PASS | BatchNorm layers=4:PASS | hidden=128:PASS | cross-attention heads=4, embed=128:PASS | Transformer one layer:PASS | Transformer no positional encoding:PASS | Transformer padding mask, no causal mask:PASS
+PCQM | GINE-Mamba | GINE layers=4:PASS | GINE eps=0 fixed:PASS | BatchNorm layers=4:PASS | hidden=128:PASS | cross-attention heads=4, embed=128:PASS | Mamba d_model=128,d_state=16,d_conv=4,expand=2:PASS
+QM9 | GINE-128 | GINE layers=4:PASS | GINE eps=0 fixed:PASS | BatchNorm layers=4:PASS | hidden=128:PASS
+QM9 | GINE-Wide | GINE layers=4:PASS | GINE eps=0 fixed:PASS | BatchNorm layers=4:PASS | hidden=196:PASS
+QM9 | GINE-Attn (NoSeq) | GINE layers=4:PASS | GINE eps=0 fixed:PASS | BatchNorm layers=4:PASS | hidden=128:PASS | cross-attention heads=4, embed=128:PASS | pointwise adapter:PASS | no contextual sequence encoder:PASS
+QM9 | GINE-GRU | GINE layers=4:PASS | GINE eps=0 fixed:PASS | BatchNorm layers=4:PASS | hidden=128:PASS | cross-attention heads=4, embed=128:PASS | GRU single-layer unidirectional:PASS
+QM9 | GINE-Transformer | GINE layers=4:PASS | GINE eps=0 fixed:PASS | BatchNorm layers=4:PASS | hidden=128:PASS | cross-attention heads=4, embed=128:PASS | Transformer one layer:PASS | Transformer no positional encoding:PASS | Transformer padding mask, no causal mask:PASS
+QM9 | GINE-Mamba | GINE layers=4:PASS | GINE eps=0 fixed:PASS | BatchNorm layers=4:PASS | hidden=128:PASS | cross-attention heads=4, embed=128:PASS | Mamba d_model=128,d_state=16,d_conv=4,expand=2:PASS

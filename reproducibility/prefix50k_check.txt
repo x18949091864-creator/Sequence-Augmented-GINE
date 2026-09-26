@@ -1,0 +1,6 @@
+PASS PCQM official split wrapper preserves original indices.
+PASS Prefix50k uses first 50000 official training and first 10000 official validation split positions; no random/scaffold subset construction.
+PASS all 30 formal PCQM configs use train_size=50000 and val_size=10000.
+PASS QM9 mu target index 0, gap target index 4.
+PASS QM9 split seed 42 and sizes 110000/10000/10831; all 130831 indices unique.
+PASS mu and verified gap splits have identical train/valid/test indices.
