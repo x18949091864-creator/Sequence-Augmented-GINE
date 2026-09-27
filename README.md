@@ -27,6 +27,10 @@ QM9 uses the included fixed split files: 110000 training, 10000 validation, and 
 
 The five formal model seeds are **7, 42, 123, 2024, 3407**. The selected target is normalized using training-split statistics for QM9; validation MAE in the original unit selects the best checkpoint.
 
+## PCQM4Mv2-Prefix50k reproducibility
+
+The exact ordered training and validation indices are in [data_splits/pcqm4mv2_prefix50k/](data_splits/pcqm4mv2_prefix50k/). The directory contains 50,000 official OGB training indices and 10,000 official OGB validation indices, a builder that regenerates them from the official split, and a verifier for their counts, hashes, and order. The underlying PCQM4Mv2 molecular records are obtained from OGB and are not redistributed here.
+
 ## Repository layout
 
 - models/dual_branch/: final model classes and their required import dependencies.
